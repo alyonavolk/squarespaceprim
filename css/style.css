@@ -1,0 +1,602 @@
+/*https://www.figma.com/file/VHEViIgT7gaSHHaAQTdbBS/Squarespace?node-id=1%3A2*/
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    min-width: 1200px;
+    font-family: 'font', sans-serif;
+}
+
+.list_reset{
+    margin: 0;
+    padding: 0;
+    list-style: none; /*отменяет маркеры*/
+}
+
+.btn_reset{ /*сбрасывает стили кнопки*/
+    padding: 0;
+    border: none;
+    background-color: transparent; /*устанавливает прозрачный фон*/
+    cursor: pointer; /*чтоб было видно курсор в виде ручки*/
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section_title{
+    margin: 0;
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 130%;
+    color: #1C1C1C;
+}
+
+.section_descr{
+    margin: 0;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #787878;
+}
+
+.section_offset{
+    padding-top: 80px;
+    padding-bottom: 160px;
+}
+
+/*header*/
+
+.header{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.header_container{
+    background-color: #000000;
+    align-items: center;
+    padding: 33px 0;
+}
+
+.header_logo{
+    margin-right: auto;
+    margin-left: 40px;
+}
+
+.header_list{
+    margin-right: 279px;
+}
+
+.header_list_item:not(:last-child){
+    margin-right: 56px;
+}
+
+.header_list_btn{
+    margin-right: 40px;
+    align-items: center;
+}
+
+.header_list_item_btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.btn{
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    background-color:#FFFFFF;
+    padding: 21px 31px;
+}
+
+/*create*/
+.create{
+    padding-top: 93px;
+    padding-bottom: 173px;
+    background-image: url(../img/hero_fon.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    padding-left: 40px;
+}
+
+.create_content{
+    max-width: 40%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.create_content_item:not(:last-child){
+    margin-right: 49px;
+}
+
+.create_link{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #EFEFEF;
+    margin-bottom: 12px;
+}
+
+.create_title{
+    margin: 0;
+    margin-bottom: 22px;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 72px;
+    color: #FFFFFF;
+}
+
+.create_descr{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+/*all-in-one*/
+
+.all-in-one_container{
+    background-color: #F2F2F2;
+    padding-top: 40px;
+}
+
+.all-in-one_title{
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+    text-align: center;
+    color: #000000;
+}
+
+.all-in-one_descr{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+    margin: 0 28%;
+}
+
+.all-in-one_items{
+    margin: 77px 40px 0 40px;
+}
+
+.all-in-one_item:not(:last-child){
+    margin-right: 40px;
+}
+
+.all-in-one_item_title{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    color: #000000;
+}
+
+.all-in-one_item_descr{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 77px;
+}
+
+/*imagine*/
+.imagine{
+    padding-top: 125px;
+    padding-bottom: 126px;
+    background-image: url(../img/piano_fon.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    text-align: center;
+}
+
+.imagine_title{
+    margin: 0;
+    padding: 0;
+    margin: 0 35%;
+    padding-bottom: 22px;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.imagine_descr{
+    margin: 0;
+    padding: 0;
+    margin: 0 35%;
+    padding-bottom: 20px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.imagine_item{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/*engage*/
+.engage_container{
+    background-color: #60777C;
+}
+
+.engage_title{
+    margin: 0;
+    padding: 0;
+    padding: 80px 28% 20px 28%;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.engage_descr_title{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0 28%;
+}
+
+.engage_item{
+    padding: 0 40px ;
+    padding-top: 120px;
+}
+
+.engage_item:last-child{
+    padding-bottom: 120px;
+}
+
+.engage_right{
+    margin-right: 15%;
+}
+
+.engage_left{
+    margin-left: 15%;
+}
+
+.engage_item_title{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin-bottom: 22px;
+}
+
+.engage_descr{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+/*protect_your*/
+.protect_container{
+    background-color: #E5E5E5;
+}
+
+.protect_your{
+    margin-left: 55%;
+    padding: 186px 40px 182px 40px;
+}
+
+.protect_title{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+    color: #000000;
+    margin-bottom: 22px;
+}
+
+.protect_descr{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+}
+
+/*member*/
+.member_container{
+    background-color: #60777C;
+    padding: 80px 40px;
+}
+
+.member_clients{
+    max-width: 40%;
+}
+
+.member_descr_z{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+
+.member_descr{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.clients_name{
+    padding-top: 190px;
+}
+
+.member_slk{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.27);
+}
+
+.member_img{
+    margin-left: 155px;
+}
+
+.member_img_list{
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 20%;
+    margin-left: auto;
+}
+
+/*how_to_get*/
+.how_to_get_container{
+    background-color: #000000;
+    padding: 80px 40px;
+}
+
+.how_to_get_st{
+    max-width: 40%;
+    margin-right: 187px;
+}
+
+.how_to_get_title{
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+    color: #FFFFFF;
+}
+
+.how_to_get_slk{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.how_to_get_list{
+    list-style-type: decimal-leading-zero;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.how_to_get_descr{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+/*frequently*/
+.frequently_container{
+    background-color: #000000;
+}
+
+.frequently_title{
+    padding-top: 75px;
+    padding-bottom: 44px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+    max-width: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.frequently_list{
+    max-width: 50%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.frequently_item{
+    align-items: center;
+    padding: 20px 0;
+    
+    background-image: url(../img/+.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right;
+    text-align: center;
+
+    border-bottom: 1px solid #CACACA4D;
+}
+
+.frequently_item:first-child{
+    border-top: 1px solid #CACACA4D;
+}
+
+.frequently_descr{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+/*award_winning*/
+.award_winning_container{
+    background-color: #000000;
+    padding: 80px 40px;
+}
+
+.award_winning_list{
+    padding-top: 198px;
+    padding-left: 157px;
+    max-width: 50%;
+
+}
+
+.award-winning_title{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 22px;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+    color: #FFFFFF;
+}
+
+.award_winning_dscr{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 19px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.award_winning_item_slk{
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 19px;
+}
+
+/*website*/
+.website_container{
+    background-color: #000000;
+    padding: 75px 40px 80px;
+}
+
+.webcite_title{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+    max-width: 55%;
+}
+
+.website_btn{
+    margin-left: auto;
+}
+
+/*footer*/
+
+.footer_container{
+    background-color: #000000;
+    padding: 121px 40px 99px 40px;
+}
+
+.footer_logo{
+    margin-right: 195px;
+}
+
+.footer_descr, .footer_descr_g{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer_en{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer_logo_1{
+    margin-bottom: 38px;
+}
+
+.footer_en{
+    background-color: #1A1A1A;
+    padding: 17px 70px 17px 19px;
+    margin-bottom: 12px;
+    background-image: url(../img/↓.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 90%;
+}
+
+.footer_item{
+    display: block;
+    margin-right: 67px;
+    margin-bottom: 9px;
+}
+
+.footer_descr_g{
+    display: block;
+    padding-bottom: 26px;
+}
